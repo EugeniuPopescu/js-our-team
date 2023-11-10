@@ -20,7 +20,7 @@ let team = [
         ruolo: 'Social Media Manager',
         foto: 'angela-lopez-social-media-manager.jpg'
     },
-    memebro5 ={
+    memebro5 = {
         nome: 'Scott Estrada',
         ruolo: 'Developer',
         foto: 'scott-estrada-developer.jpg'
@@ -36,11 +36,14 @@ let team = [
 for (let i = 0; i < team.length; i++) {
     let individuo = team[i];
     // stampo gli oggetti
-    console.log(individuo);
-
+    // console.log(individuo);
+    
     // stampo con for in
-    for (const key in individuo) {
+    for (const key in team[i]) {
         console.log(`memebro-${i}`, key, individuo[key]);
+        document.querySelector('#team').innerHTML += `${key}: ${individuo[key]}<br>`;
+        
     }
+    console.log('--------------------------------');
+    document.querySelector('#team').innerHTML += `-------------------------------- <br>`;
 }
-
