@@ -1,0 +1,16 @@
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.box {
+    width: calc(100% / 3 - 3rem);
+
+    border-radius: 1rem;
+}
+
+img {
+    width: 100%;
+}
